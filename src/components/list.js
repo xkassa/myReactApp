@@ -7,7 +7,6 @@ const List = () => {
     const [alertVisible, setAlertVisible] = useState(false)
 
     function handleClick(opt) {
-        console.log("Button Clicked")
         setModal({shown: true, content: <>Modal content 1</>})
     }
 
