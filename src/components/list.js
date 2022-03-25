@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import {Button, Modal, Alert} from 'react-bootstrap'
+import DataForm from "./formik-form"
+import Signup from "./signup"
 
 const List = () => {
     const [modal, setModal] = useState({shown: false})
@@ -26,7 +28,7 @@ const List = () => {
         <Modal show={modal.shown} onHide={handleCloseModal}>
             <Modal.Header closeButton/>
             <Modal.Body>
-                {modal.content}
+                    <Signup/>
             </Modal.Body>
         </Modal>
     </div>
